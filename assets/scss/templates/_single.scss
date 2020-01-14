@@ -1,0 +1,45 @@
+header.header-post {
+    height: 600px;
+}
+section.content {
+    position: relative;
+    bottom: 452px;
+    p {
+        color: $bg-black;
+    }
+    .box {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 60px;
+        .name-post{
+            height: 120px;
+            width: 490px;
+            background: $bg-black;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 30px;
+            &:after {
+                content: url("../img/arrow.png");
+                display: block;
+                position: absolute;
+                top: -24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.content {
+        .box {
+            height: 370px;
+            .name-post {
+                height: 85px;
+                padding: 22px;
+            }
+        }
+    }
+}
